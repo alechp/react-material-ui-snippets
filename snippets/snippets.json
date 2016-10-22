@@ -160,27 +160,27 @@
         "description": "<MaterialUI> Switches - Toggle component"
     },
     "snackbar":{
-        "prefix":"musu",
+        "prefix":"musn",
         "body":"",
         "description": "<MaterialUI> Snackbar component"
     },
     "stepper":{
-        "prefix":"mutable",
+        "prefix":"muste",
         "body":"",
         "description": "<MaterialUI> Stepper component"
     },
     "subheader":{
-        "prefix":"mutabs",
+        "prefix":"musu",
         "body":"",
         "description": "<MaterialUI> Subheader component"
     },
     "table":{
-        "prefix":"mutf",
+        "prefix":"mutable",
         "body":"",
         "description": "<MaterialUI> Table component"
     },
     "tabs":{
-        "prefix":"mutp",
+        "prefix":"mutabs",
         "body":"",
         "description": "<MaterialUI> Tabs component"
     },
@@ -195,7 +195,7 @@
         "description": "<MaterialUI> TimePicker component"
     },
     "toolbar":{
-        "prefix":"muto",
+        "prefix":"mut",
         "body":"",
         "description": "<MaterialUI> Toolbar component"
     }
