@@ -2,11 +2,11 @@
   "name": "react-material-ui-snippets",
   "displayName": "React Material UI Snippets",
   "description": "Component sample code from http://www.material-ui.com/",
-  "icon": "images/materialui-icon.ico",
+  "icon": "images/mui_icon.png",
   "galleryBanner": {
     "theme": "dark"
   },
-  "version": "0.13.0",
+  "version": "0.14.0",
   "publisher": "alechp",
   "engines": {
     "vscode": "^1.0.0"
