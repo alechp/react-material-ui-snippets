@@ -18,7 +18,7 @@ vsce package
 
 2. [Install extension](https://code.visualstudio.com/docs/extensions/install-extension)
 ```
-mv react-material-ui-snippets-VERSION.vsix ~/.vscode/extensions
+code --install-extension react-material-ui-snippets-0.VERSION.0.vsix
 ```
 
 
