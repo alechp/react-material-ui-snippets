@@ -18,19 +18,19 @@ Found myself using material-ui more than react-toolbox, so forked my other snipp
 |mu**a**&rarr;| Avatar | [http://www.material-ui.com/#/components/avatar](http://www.material-ui.com/#/components/avatar) |
 |mu**ba**&rarr;| Badge | [http://www.material-ui.com/#/components/badge](http://www.material-ui.com/#/components/badge) |
 |mu**bn**&rarr;| BottomNavigation | [http://www.material-ui.com/#/components/bottom-navigation](http://www.material-ui.com/#/components/bottom-navigation) |
-|mu**bu**&rarr;| Buttons - FlatButton | [http://www.material-ui.com/#/components/flat-button](http://www.material-ui.com/#/components/flat-button) |
-|mu**bu**&rarr;| Buttons - RaisedButton | [http://www.material-ui.com/#/components/raised-button](http://www.material-ui.com/#/components/raised-button) |
-|mu**bu**&rarr;| Buttons - FloatingActionButton | [http://www.material-ui.com/#/components/floating-action-button](http://www.material-ui.com/#/components/floating-action-button) |
-|mu**bu**&rarr;| Buttons - IconButton | [http://www.material-ui.com/#/components/icon-button](http://www.material-ui.com/#/components/icon-button) |
+|mu**bfb**&rarr;| Buttons - FlatButton | [http://www.material-ui.com/#/components/flat-button](http://www.material-ui.com/#/components/flat-button) |
+|mu**brb**&rarr;| Buttons - RaisedButton | [http://www.material-ui.com/#/components/raised-button](http://www.material-ui.com/#/components/raised-button) |
+|mu**bfab**&rarr;| Buttons - FloatingActionButton | [http://www.material-ui.com/#/components/floating-action-button](http://www.material-ui.com/#/components/floating-action-button) |
+|mu**bib**&rarr;| Buttons - IconButton | [http://www.material-ui.com/#/components/icon-button](http://www.material-ui.com/#/components/icon-button) |
 |mu**ca**&rarr;| Card | [http://www.material-ui.com/#/components/card](http://www.material-ui.com/#/components/card) |
 |mu**ch**&rarr;| Chip | [http://www.material-ui.com/#/components/chip](http://www.material-ui.com/#/components/chip) |
 |mu**dp**&rarr;| DatePicker | [http://www.material-ui.com/#/components/date-picker](http://www.material-ui.com/#/components/date-picker) |
 |mu**di**&rarr;| Dialog | [http://www.material-ui.com/#/components/dialog](http://www.material-ui.com/#/components/dialog) |
-|mu**di**&rarr;| Divider | [http://www.material-ui.com/#/components/divider](http://www.material-ui.com/#/components/divider) |
+|mu**div**&rarr;| Divider | [http://www.material-ui.com/#/components/divider](http://www.material-ui.com/#/components/divider) |
 |mu**dr**&rarr;| Drawer | [http://www.material-ui.com/#/components/drawer](http://www.material-ui.com/#/components/drawer) |
-|mu**dr**&rarr;| GridList| [http://www.material-ui.com/#/components/grid-list](http://www.material-ui.com/#/components/grid-list) |
-|mu**fi**&rarr;| Icons - Font Icon | [http://www.material-ui.com/#/components/font-icon](http://www.material-ui.com/#/components/font-icon) |
-|mu**fi**&rarr;| Icons - SVG Icon | [http://www.material-ui.com/#/components/font-icon](http://www.material-ui.com/#/components/svg-icon) |
+|mu**gl**&rarr;| GridList| [http://www.material-ui.com/#/components/grid-list](http://www.material-ui.com/#/components/grid-list) |
+|mu**ifi**&rarr;| Icons - Font Icon | [http://www.material-ui.com/#/components/font-icon](http://www.material-ui.com/#/components/font-icon) |
+|mu**isi**&rarr;| Icons - SVG Icon | [http://www.material-ui.com/#/components/font-icon](http://www.material-ui.com/#/components/svg-icon) |
 |mu**m**&rarr;| List | [http://www.material-ui.com/#/components/list](http://www.material-ui.com/#/components/list) |
 |mu**m**&rarr;| Menus - Menu | [http://www.material-ui.com/#/components/menu](http://www.material-ui.com/#/components/menu) |
 |mu**m**&rarr;| Menus - Icon Menu | [http://www.material-ui.com/#/components/icon-menu](http://www.material-ui.com/#/components/icon-menu) |
@@ -67,7 +67,7 @@ Library reference: http://material-ui.com
 
 <h3>Shortcuts - Idioms</h3>
 
-<h4>Simple Naming Mnemonic
+<h4>Simple Naming Mnemonic</h4>
 "Simple" = component where name collision doesn't occur in acronym. 
 
 Every key command shomucut is a combination of:  
@@ -75,36 +75,47 @@ Every key command shomucut is a combination of:
 [2] The name of the command (__in this case, commands refer to Component names__)
 
 **Example**
-```javascript
-muab = Material UI App Bar 
 ```
+muab = Material UI App Bar 
+``` 
 
-<h4>Complex Naming Mnemonic 
+<h4>Complex Naming Mnemonic</h4> 
 "Complex" refers to any place where a naming collision occurs.  
 
+<h5>Categorized Name</h5>
+Any categorized component shall have the category name pre-appended.
+**Example**
+```
+Flat Button & Raised Button are both "Buttons"
+They are grouped together in the Material UI docs
+Thus,
 
-<h5>One Letter Collision
+mubfb = Material UI Buttons - Flat Button 
+mubrb = Material UI Buttons - Raised Button  
+```
+
+<h5>One Letter Collision</h5>
 In the event of a naming collision (e.g. mutc = MaterialUI CARD or CHIP?), the second letter of the last word shall be appended.
 For every collision at nth letter, append a subsequent letter.   
 **Example**
-```javascript
+```
 muca = Material UI Card
 much = Material UI Chip
 ```
 
-<h5>Two Letter Collision
+<h5>Two Letter Collision</h5>
 Append the last letter of the last word in descending alphabetical order  
 **Example**
-```javascript
+```
 mul = Material UI Layout
 muli = Material UI Link
 mulis = Material UI List
 ``` 
 
-<h5>Three Letter Collision
+<h5>Three Letter Collision</h5>
 Still name collision after 3 letters? Spell out the word.  
 **Example**
-```javascript
+```
 mutable = Material UI Table
 mutabs = Material UI Tabs
 ```
