@@ -1,45 +1,44 @@
-#REACT TOOLBOX SNIPPETS
+<h1>Material UI Snippets</h2>
+Library reference: http://material-ui.com
+Detailed Component documentation: [COMPONENTS](docs/COMPONENTS.MD)
 
-Library reference: http://react-toolbox.com/
-Detailed port of component documentation: [COMPONENTS](docs/COMPONENTS.MD)
-
-##Getting Started
+<h3>Getting Started</h3>
 1. Open VSCode 
 2. Open command palette ```CMD + P```
-3. Type "ext install react-toolbox-snippets"
+3. Type "ext install react-material-ui-snippets"
 4. Restart
 
 
-##Shortcuts
+<h3>Shortcuts</h3>
 | Code | Component Represented             | URL
 |------|-----------------------------------|-----------------------------------------------------------------------------------------------|
-|rt**ab**&rarr;| AppBar | http://react-toolbox.com/#/components/app_bar |
-|rt**ac**&rarr;| AutoComplete | http://react-toolbox.com/#/components/autocomplete |
-|rt**a**&rarr;| Avatar | http://react-toolbox.com/#/components/avatar |
-|rt**b**&rarr;| Button | http://react-toolbox.com/#/components/button |
-|rt**ca**&rarr;| Card | http://react-toolbox.com/#/components/card |
-|rt**ch**&rarr;| Chip | http://react-toolbox.com/#/components/chip |
-|rt**cb**&rarr;| Checkbox | http://react-toolbox.com/#/components/checkbox |
-|rt**dp**&rarr;| DatePicker | http://react-toolbox.com/#/components/date_picker |
-|rt**di**&rarr;| Dialog | http://react-toolbox.com/#/components/dialog |
-|rt**dr**&rarr;| Drawer | http://react-toolbox.com/#/components/drawer |
-|rt**dd**&rarr;| DropDown | http://react-toolbox.com/#/components/dropdown|
-|rt**fi**&rarr;| Font Icon | http://react-toolbox.com/#/components/font_icon |
-|rt**i**&rarr;| Input | http://react-toolbox.com/#/components/input |
-|rt**l**&rarr;| Layout | http://react-toolbox.com/#/components/layout |
-|rt**li**&rarr;| Link | http://react-toolbox.com/#/components/link |
-|rt**m**&rarr;| Menu | http://react-toolbox.com/#/components/menu |
-|rt**n**&rarr;| Navigation | http://react-toolbox.com/#/components/navigation |
-|rt**pb**&rarr;| Progress Bar | http://react-toolbox.com/#/components/progress_bar |
-|rt**rb**&rarr;| Radio Buttons | http://react-toolbox.com/#/components/radio_group |
-|rt**r**&rarr;| Ripple | http://react-toolbox.com/#/components/ripple |
-|rt**s**&rarr;| Slider | http://react-toolbox.com/#/components/slider |
-|rt**sb**&rarr;| SnackBar | http://react-toolbox.com/#/components/snackbar |
-|rt**sw**&rarr;| Switch | http://react-toolbox.com/#/components/switch |
-|rt**table**&rarr;| Table | http://react-toolbox.com/#/components/table |
-|rt**tabs**&rarr;| Tabs | http://react-toolbox.com/#/components/tabs |
-|rt**tt**&rarr;| ToolTips | http://react-toolbox.com/#/components/tooltip |
-|rt**tp**&rarr;| Time Picker | http://react-toolbox.com/#/components/time_picker |
+|mu**ab**&rarr;| AppBar | http://www.material-ui.com/#/components/app_bar |
+|mu**ac**&rarr;| AutoComplete | http://www.material-ui.com/#/components/autocomplete |
+|mu**a**&rarr;| Avatar | http://www.material-ui.com/#/components/avatar |
+|mu**b**&rarr;| Button | http://www.material-ui.com/#/components/button |
+|mu**ca**&rarr;| Card | http://www.material-ui.com/#/components/card |
+|mu**ch**&rarr;| Chip | http://www.material-ui.com/#/components/chip |
+|mu**cb**&rarr;| Checkbox | http://www.material-ui.com/#/components/checkbox |
+|mu**dp**&rarr;| DatePicker | http://www.material-ui.com/#/components/date_picker |
+|mu**di**&rarr;| Dialog | http://www.material-ui.com/#/components/dialog |
+|mu**dr**&rarr;| Drawer | http://www.material-ui.com/#/components/drawer |
+|mu**dd**&rarr;| DropDown | http://www.material-ui.com/#/components/dropdown|
+|mu**fi**&rarr;| Font Icon | http://www.material-ui.com/#/components/font_icon |
+|mu**i**&rarr;| Input | http://www.material-ui.com/#/components/input |
+|mu**l**&rarr;| Layout | http://www.material-ui.com/#/components/layout |
+|mu**li**&rarr;| Link | http://www.material-ui.com/#/components/link |
+|mu**m**&rarr;| Menu | http://www.material-ui.com/#/components/menu |
+|mu**n**&rarr;| Navigation | http://www.material-ui.com/#/components/navigation |
+|mu**pb**&rarr;| Progress Bar | http://www.material-ui.com/#/components/progress_bar |
+|mu**rb**&rarr;| Radio Buttons | http://www.material-ui.com/#/components/radio_group |
+|mu**r**&rarr;| Ripple | http://www.material-ui.com/#/components/ripple |
+|mu**s**&rarr;| Slider | http://www.material-ui.com/#/components/slider |
+|mu**sb**&rarr;| SnackBar | http://www.material-ui.com/#/components/snackbar |
+|mu**sw**&rarr;| Switch | http://www.material-ui.com/#/components/switch |
+|mu**table**&rarr;| Table | http://www.material-ui.com/#/components/table |
+|mu**tabs**&rarr;| Tabs | http://www.material-ui.com/#/components/tabs |
+|mu**tt**&rarr;| ToolTips | http://www.material-ui.com/#/components/tooltip |
+|mu**tp**&rarr;| Time Picker | http://www.material-ui.com/#/components/time_picker |
 
 
 -------------------------
@@ -48,13 +47,13 @@ Detailed port of component documentation: [COMPONENTS](docs/COMPONENTS.MD)
 ##Simple Naming Mnemonic
 "Simple" = component where name collision doesn't occur in acronym. 
 
-Every key command shortcut is a combination of:  
-[1] The library acronym (__in this case, ReactToolbox = rt__)  
+Every key command shomucut is a combination of:  
+[1] The library acronym (__in this case, MaterialUI = mu__)  
 [2] The name of the command (__in this case, commands refer to Component names__)
 
 **Example**
 ```javascript
-rtab = React Toolbox App Bar 
+muab = React Toolbox App Bar 
 ```
 
 ##Complex Naming Mnemonic 
@@ -62,27 +61,27 @@ rtab = React Toolbox App Bar
 
 
 ###One Letter Collision
-In the event of a naming collision (e.g. rtc = React Toolbox CARD or CHIP?), the second letter of the last word shall be appended.
+In the event of a naming collision (e.g. mutc = MaterialUI CARD or CHIP?), the second letter of the last word shall be appended.
 For every collision at nth letter, append a subsequent letter.   
 **Example**
 ```javascript
-rtca = React Toolbox Card
-rtch = React Toolbox Chip
+muca = React Toolbox Card
+much = React Toolbox Chip
 ```
 
 ###Two Letter Collision
 Append the last letter of the last word in descending alphabetical order  
 **Example**
 ```javascript
-rtl = React Toolbox Layout
-rtli = React Toolbox Link
-rtlis = React Toolbox List
+mul = React Toolbox Layout
+muli = React Toolbox Link
+mulis = React Toolbox List
 ``` 
 
 ###Three Letter Collision
 Still name collision after 3 letters? Spell out the word.  
 **Example**
 ```javascript
-rttable = React Toolbox Table
-rttabs = React Toolbox Tabs
+mutable = React Toolbox Table
+mutabs = React Toolbox Tabs
 ```
