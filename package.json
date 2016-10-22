@@ -1,0 +1,25 @@
+{
+    "name": "react-material-ui-snippets",
+    "displayName": "React Material UI Snippets",
+    "description": "Component sample code from http://www.material-ui.com/",
+    "icon": "images/materialui-icon.ico",
+    "galleryBanner": {
+        "theme": "dark"
+    },
+    "version": "0.12.0",
+    "publisher": "alechp",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
