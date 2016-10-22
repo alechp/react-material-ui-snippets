@@ -1,7 +1,7 @@
 {
     "appBar":{
         "prefix":"muab",
-        "body":"",
+        "body":"import React from 'react';\nimport AppBar from 'material-ui/AppBar';\nconst AppBarExampleIcon = () => (\n\t<AppBar\n\t\ttitle="Title"\n\t\ticonClassNameRight=\"muidocs-icon-navigation-expand-more\"\n\t/>\n);\n\nexport default AppBarExampleIcon;",
         "description": "<MaterialUI> AppBar component"
     },
     "autoComplete":{

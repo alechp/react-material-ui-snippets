@@ -9,7 +9,17 @@ Using [VSCE](https://code.visualstudio.com/docs/tools/vscecli) to Publish to [VS
 ```
 npm i -g vsce
 ```
-2. Publish to marketplace
+
+<h4>Install for local use</h4>
+1. Package extension
+```
+vsce package
+```
+
+2. [Install extension](https://code.visualstudio.com/docs/extensions/install-extension)
+
+
+<h4>Publish to marketplace</h4>
 ```
 vsce publish
 ```
