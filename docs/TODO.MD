@@ -1,9 +1,0 @@
-<h1>TODO</h1>
-
-<h3>Launch Checklist</h3>
-* Confirm .ico file works with VSCode extension marketplace
-* Add images to docs/screenshots
-* Add links to docs/screenshots/* in COMPONENTS.MD
-* Add reference to [Themes, Styles, Colors]
-* Add sample source to snippets.json
-* Publish to VSCode Marketplace
