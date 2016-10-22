@@ -62,6 +62,7 @@ Library reference: http://material-ui.com
 <h4>Docs</h4>
 * `Component breakdown`: [COMPONENTS](docs/COMPONENTS.MD)
 * `Extension build`: [BUILD](docs/BUILD.MD)
+* `Action items`: [TODO](docs/TODO.MD)
 
 -------------------------
 
