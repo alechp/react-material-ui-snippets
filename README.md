@@ -64,6 +64,7 @@ Library reference: http://material-ui.com
 * `Component breakdown`: [COMPONENTS](docs/COMPONENTS.MD)
 * `Extension build`: [BUILD](docs/BUILD.MD)
 * `Action items`: [TODO](docs/TODO.tasks) - In order to view ToDo Tasks, please install [this extension](https://marketplace.visualstudio.com/items?itemName=sandy081.todotasks)
+* `Material UI + VSCode Intellisense`: [INTELLISENSE](docs/INTELLISENSE.MD)
 
 -------------------------
 
