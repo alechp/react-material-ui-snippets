@@ -1,142 +1,202 @@
 {
     "appBar":{
-        "prefix":"rtab",
-        "body":"import AppBar from 'react-toolbox/lib/app_bar';\n\nconst AppBarTest = () => (\n\t<AppBar fixed flat>\n\t\t<a href='/home'>React Toolbox Docs</a>\n\t\t<Navigation />\n\t</AppBar>\n);\n",
-        "description": "<ReactToolbox> App Bar component"
+        "prefix":"muab",
+        "body":"",
+        "description": "<MaterialUI> AppBar component"
     },
     "autoComplete":{
-        "prefix":"rtac",
-        "body":"import Autocomplete from 'react-toolbox/lib/autocomplete';\n\nconst source = {\n\t'ES-es': 'Spain',\n\t'TH-th': 'Thailand',\n\t'EN-gb': 'England',\n\t'EN-en': 'USA'\n};\n\nclass AutocompleteTest extends React.Component {\n\tstate = {\n\t\tcountries: ['ES-es', 'TH-th']\n\t}\n\n\thandleChange = (value) => {\n\t\tthis.setState({countries: value});\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<Autocomplete\n\t\t\t\tdirection='down'\n\t\t\t\tselectedPosition='above'\n\t\t\t\tlabel='Choose countries'\n\t\t\t\tonChange={this.handleChange}\n\t\t\t\tsource={source}\n\t\t\t\tvalue={this.state.countries}\n\t\t\t/>\n\t\t);\n\t}\n\t}\n",
-        "description": "<ReactToolbox> AutoComplete component"
+        "prefix":"muac",
+        "body":"",
+        "description": "<MaterialUI> AutoComplete component"
     },
-       "Avatar":{
-        "prefix":"rta",
-        "body":"import Avatar from 'react-toolbox/lib/avatar';\n\nconst GithubIcon = () => (\n\t<svg viewBox='0 0 284 277'>\n\t\t<g><path d='M141.888675,0.0234927555 C63.5359948,0.0234927555 0,63.5477395 0,141.912168 C0,204.6023 40.6554239,257.788232 97.0321356,276.549924 C104.12328,277.86336 106.726656,273.471926 106.726656,269.724287 C106.726656,266.340838 106.595077,255.16371 106.533987,243.307542 C67.0604204,251.890693 58.7310279,226.56652 58.7310279,226.56652 C52.2766299,210.166193 42.9768456,205.805304 42.9768456,205.805304 C30.1032937,196.998939 43.9472374,197.17986 43.9472374,197.17986 C58.1953153,198.180797 65.6976425,211.801527 65.6976425,211.801527 C78.35268,233.493192 98.8906827,227.222064 106.987463,223.596605 C108.260955,214.426049 111.938106,208.166669 115.995895,204.623447 C84.4804813,201.035582 51.3508808,188.869264 51.3508808,134.501475 C51.3508808,119.01045 56.8936274,106.353063 65.9701981,96.4165325 C64.4969882,92.842765 59.6403297,78.411417 67.3447241,58.8673023 C67.3447241,58.8673023 79.2596322,55.0538738 106.374213,73.4114319 C117.692318,70.2676443 129.83044,68.6910512 141.888675,68.63701 C153.94691,68.6910512 166.09443,70.2676443 177.433682,73.4114319 C204.515368,55.0538738 216.413829,58.8673023 216.413829,58.8673023 C224.13702,78.411417 219.278012,92.842765 217.804802,96.4165325 C226.902519,106.353063 232.407672,119.01045 232.407672,134.501475 C232.407672,188.998493 199.214632,200.997988 167.619331,204.510665 C172.708602,208.913848 177.243363,217.54869 177.243363,230.786433 C177.243363,249.771339 177.078889,265.050898 177.078889,269.724287 C177.078889,273.500121 179.632923,277.92445 186.825101,276.531127 C243.171268,257.748288 283.775,204.581154 283.775,141.912168 C283.775,63.5477395 220.248404,0.0234927555 141.888675,0.0234927555' /></g>\n\t</svg>\n);\n\nconst AvatarTest = () => (\n\t<div>\n\t\t<Avatar style={{backgroundColor: 'deepskyblue'}} icon='folder' />\n\t\t<Avatar icon={<GithubIcon />}/>\n\t\t<Avatar><img src='https://placeimg.com/80/80/animals'/></Avatar>\n\t\t<Avatar title='Javier' image='https://placeimg.com/80/80/animals'/>\n\t\t<Avatar style={{backgroundColor:'yellowgreen'}}><GithubIcon /></Avatar>\n\t</div>\n);\n",
-        "description": "<ReactToolbox> Avatar component"
+    "avatar":{
+        "prefix":"mua",
+        "body":"",
+        "description": "<MaterialUI> Avatar component"
     },
-    "Button":{
-        "prefix":"rtb",
-        "body":"import {Button, IconButton} from 'react-toolbox/lib/button';\n\nconst GithubIcon = () => (\n\t<svg viewBox='0 0 284 277'>\n\t\t<g><path d='M141.888675,0.0234927555 C63.5359948,0.0234927555 0,63.5477395 0,141.912168 C0,204.6023 40.6554239,257.788232 97.0321356,276.549924 C104.12328,277.86336 106.726656,273.471926 106.726656,269.724287 C106.726656,266.340838 106.595077,255.16371 106.533987,243.307542 C67.0604204,251.890693 58.7310279,226.56652 58.7310279,226.56652 C52.2766299,210.166193 42.9768456,205.805304 42.9768456,205.805304 C30.1032937,196.998939 43.9472374,197.17986 43.9472374,197.17986 C58.1953153,198.180797 65.6976425,211.801527 65.6976425,211.801527 C78.35268,233.493192 98.8906827,227.222064 106.987463,223.596605 C108.260955,214.426049 111.938106,208.166669 115.995895,204.623447 C84.4804813,201.035582 51.3508808,188.869264 51.3508808,134.501475 C51.3508808,119.01045 56.8936274,106.353063 65.9701981,96.4165325 C64.4969882,92.842765 59.6403297,78.411417 67.3447241,58.8673023 C67.3447241,58.8673023 79.2596322,55.0538738 106.374213,73.4114319 C117.692318,70.2676443 129.83044,68.6910512 141.888675,68.63701 C153.94691,68.6910512 166.09443,70.2676443 177.433682,73.4114319 C204.515368,55.0538738 216.413829,58.8673023 216.413829,58.8673023 C224.13702,78.411417 219.278012,92.842765 217.804802,96.4165325 C226.902519,106.353063 232.407672,119.01045 232.407672,134.501475 C232.407672,188.998493 199.214632,200.997988 167.619331,204.510665 C172.708602,208.913848 177.243363,217.54869 177.243363,230.786433 C177.243363,249.771339 177.078889,265.050898 177.078889,269.724287 C177.078889,273.500121 179.632923,277.92445 186.825101,276.531127 C243.171268,257.748288 283.775,204.581154 283.775,141.912168 C283.775,63.5477395 220.248404,0.0234927555 141.888675,0.0234927555' /></g>\n\t</svg>\n\n);\nconst TestButtons = () => (\n\t<div>\n\t\t<Button href='http://github.com/javivelasco' target='_blank' raised>\n\t\t\t<GithubIcon /> Github\n\t\t</Button>\n\t\t<Button icon='bookmark' label='Bookmark' accent />\n\t\t<Button icon='bookmark' label='Bookmark' raised primary />\n\t\t<Button icon='inbox' label='Inbox' flat />\n\t\t<Button icon='add' floating />\n\t\t<Button icon='add' floating accent mini />\n\t\t<IconButton icon='favorite' accent />\n\t\t<IconButton primary><GithubIcon /></IconButton>\n\t\t<Button icon='add' label='Add this' flat primary />\n\t\t<Button icon='add' label='Add this' flat disabled />\n\t</div>\n);\n",
-        "description": "<ReactToolbox> Button component"
+    "badge":{
+        "prefix":"muba",
+        "body":"",
+        "description": "<MaterialUI> Badge component"
     },
-    "Card":{
-        "prefix":"rtca",
-        "body":"import { Card, CardMedia, CardTitle, CardText, CardActions } from 'react-toolbox/lib/card';\n\n const dummyText = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.';\n\nconst TestCards = () => (\n\t<Card style={{width: '350px'}}>\n\t\t<CardTitle\n\t\t\tavatar='https://placeimg.com/80/80/animals'\n\t\t\ttitle='Avatar style title'\n\t\t\tsubtitle='Subtitle here'\n\t\t/>\n\t\t<CardMedia\n\t\t\taspectRatio='wide'\n\t\t\timage='https://placeimg.com/800/450/nature'\n\t\t/>\n\t\t<CardTitle\n\t\t\ttitle='Title goes here'\n\t\t\tsubtitle='Subtitle here'\n\t\t/>\n\t\t<CardText>{dummyText}</CardText>\n\t\t<CardActions>\n\t\t\t<Button label='Action 1' />\n\t\t\t<Button label='Action 2' />\n\t\t</CardActions>\n\t\t\t</Card>\n);\n\nreturn <TestCards />;\n",
-        "description": "<ReactToolbox> Card component"
+    "bottomNavigation":{
+        "prefix":"mubn",
+        "body":"",
+        "description": "<MaterialUI> BottomNavigation component"
     },
-    "Chip":{
-        "prefix":"rtch",
-        "body":"import Avatar from 'react-toolbox/lib/avatar';\nimport Chip from 'react-toolbox/lib/chip';\n\n const ChipTest = () => (\n\t<div>\n\t\t<Chip>Example chip</Chip>\n\t\t<Chip>\n\t\t\t<span style={{textDecoration: 'line-through'}}>Standard</span>\n\t\t\t<strong>Custom</strong> chip <small>(custom markup)</small>\n\t\t</Chip>\n\n\t\t<Chip deletable>Deletable Chip</Chip>\n\n\t\t<Chip>\n\t\t\t<Avatar style={{backgroundColor: 'deepskyblue'}} icon='folder' />\n\t\t\t<span>Avatar Chip</span>\n\t\t</Chip>\n\n\t\t<Chip>\n\n\t\t\t<Avatar title='A' /><span>Initial chip</span>\n\t\t</Chip>\n\n\t\t<Chip>\n\t\t\t<Avatar><img src='https://placeimg.com/80/80/animals'/></Avatar>\n\t\t\t<span>Image contact chip</span>\n\t\t</Chip>\n\t</div>\n);\n",
-        "description": "<ReactToolbox> Chip component"
+    "flatButton":{
+        "prefix":"mubfb",
+        "body":"",
+        "description": "<MaterialUI> Buttons - FlatButton component"
     },
-    "Checkbox":{
-        "prefix":"rtcb",
-        "body":"import Checkbox from 'react-toolbox/lib/checkbox';\n\nclass TestCheckbox extends React.Component {\n\tstate = { check1: true, check2: false };\n\n\thandleChange = (field, value) => {\n\t\tthis.setState({...this.state, [field]: value});\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<Checkbox\n\t\t\t\t\tchecked={this.state.check1}\n\t\t\t\t\tlabel='Checked option'\n\t\t\t\t\tonChange={this.handleChange.bind(this, 'check1')}\n\t\t\t\t/>\n\t\t\t\t<Checkbox\n\t\t\t\t\tchecked={this.state.check2}\n\t\t\t\t\tlabel='Unchecked option'\n\t\t\t\t\tonChange={this.handleChange.bind(this, 'check2')}\n\t\t\t\t/>\n\t\t\t\t<Checkbox\n\t\t\t\t\tchecked\n\t\t\t\t\tdisabled\n\t\t\t\t\tlabel='Disabled checkbox'\n\t\t\t\t/>\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Checkbox component"
+    "raisedButton":{
+        "prefix":"mubrb",
+        "body":"",
+        "description": "<MaterialUI> Buttons - RaisedButton component"
     },
-    "Date Picker":{
-        "prefix":"rtdp",
-        "body":"import DatePicker from 'react-toolbox/lib/date_picker';\n\nconst datetime = new Date(2015, 10, 16);\nconst min_datetime = new Date(new Date(datetime).setDate(8));\ndatetime.setHours(17);\ndatetime.setMinutes(28);\n\nclass DatePickerTest extends React.Component {\n\tstate = {date2: datetime};\n\n\thandleChange = (item, value) => {\n \t\tthis.setState({...this.state, [item]: value});\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<section>\n\t\t\t\t<DatePicker label='Birthdate' onChange={this.handleChange.bind(this, 'date1')} value={this.state.date1} />\n\t\t\t\t<DatePicker label='Expiration date' minDate={min_datetime} onChange={this.handleChange.bind(this, 'date2')} value={this.state.date2} />\n\t\t\t\t<DatePicker label='Formatted date' inputFormat={(value) => `${value.getDate()}/${value.getMonth()}/${value.getFullYear()}`} onChange={this.handleChange.bind(this, 'date3')} value={this.state.date3} />\n\t\t\t</section>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Date Picker component"
+    "floatingActionButton":{
+        "prefix":"mubfab",
+        "body":"",
+        "description": "<MaterialUI> Buttons - FloatingActionButton component"
     },
-    "Dialog":{
-        "prefix":"rtdi",
-        "body":"import Dialog from 'react-toolbox/lib/dialog';\n\nclass DialogTest extends React.Component {\n\tstate = {\n\t\tactive: false\n \t};\n\n\thandleToggle = () => {\n\t\tthis.setState({active: !this.state.active});\n\t}\n\tactions = [\n\t\t{ label: 'Cancel', onClick: this.handleToggle },\n\t\t{ label: 'Save', onClick: this.handleToggle }\n\t];\n\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<Button label='Show my dialog' onClick={this.handleToggle} />\n\t\t\t\t<Dialog\n\t\t\t\t\tactions={this.actions}\n\t\t\t\t\tactive{this.state.active}\n\t\t\t\t\tonEscKeyDown={this.handleToggle}\n\t\t\t\t\tonOverlayClick={this.handleToggle}\n\t\t\t\t\ttitle='My awesome dialog'\n\t\t\t\t>\n\t\t\t\t\t<p>Here you can add arbitrary content. Components like Pickers are using dialogs now.</p>\n\t\t\t\t</Dialog>\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Dialog component"
+    "iconButton":{
+        "prefix":"mubib",
+        "body":"",
+        "description": "<MaterialUI> Buttons - IconButton component"
     },
-    "Drawer":{
-        "prefix":"rtdr",
-        "body":"import Drawer from 'react-toolbox/lib/drawer';\n\nclass DrawerTest extends React.Component {\n\tstate = {\n\t\tactive: false\n\t};\n\n\thandleToggle = () => {\n\t\tthis.setState({active: !this.state.active});\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t<Button label='Show Drawer' raised accent onClick={this.handleToggle} />\n\t\t\t\t<Drawer active={this.state.active} onOverlayClick={this.handleToggle}>\n\t\t\t\t\t<h5>This is your Drawer.</h5>\n\t\t\t\t\t<p>You can embed any content you want, for example aMenu.</p>\n\t\t\t\t</Drawer>\n\t\t\t</div>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Drawer component"
+    "card":{
+        "prefix":"muca",
+        "body":"",
+        "description": "<MaterialUI> Card component"
     },
-    "DropDown":{
-        "prefix":"rtdd",
-        "body":"import Dropdown from 'react-toolbox/lib/dropdown';\n\nconst countries = [\n\t{ value: 'EN-gb', label: 'England' },\n\t{ value: 'ES-es', label: 'Spain'},\n\t{ value: 'TH-th', label: 'Thailand' },\n\t{ value: 'EN-en', label: 'USA'}\n];\n\nclass DropdownTest extends React.Component {\n\tstate = {\n\t\tvalue: 'ES-es',\n\t};\n\thandleChange = (value) => {\n\t\tthis.setState({value: value});\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<Dropdown\n\t\t\t\tauto\n\t\t\t\tonChange={this.handleChange}\n\t\t\t\tsource={countries}\n\t\t\t\tvalu{this.state.value}\n\t\t\t/>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> DropDown component"
+    "chip":{
+        "prefix":"much",
+        "body":"",
+        "description": "<MaterialUI> Chip component"
     },
-    "Font Icon":{
-        "prefix":"rtfi",
-        "body":"import FontIcon from 'react-toolbox/lib/font_icon';\n\nconst FontIcons = () => (\n\t<span>\n\t\t<FontIcon value='add' />\n\t\t<FontIcon value='favorite' />\n\t\t<FontIcon>star</FontIcon>\n\t</span>\n);\n",
-        "description": "<ReactToolbox> Font Icon component"
+    "datePicker":{
+        "prefix":"mudp",
+        "body":"",
+        "description": "<MaterialUI> DatePicker component"
     },
-    "Input":{
-        "prefix":"rti",
-        "body":"import Input from 'react-toolbox/lib/input';\n\nclass InputTest extends React.Component {\n\tstate = { name: '', phone: '', email: '', hint: '' };\n\n\thandleChange = (name, value) => {\n\t\tthis.setState({...this.state, [name]: value});\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<section>\n\t\t\t\t<Input type='text' label='Name' name='name' value={this.state.name} onChange={this.handleChange.bind(this, 'name')} maxLength={16 } />\n\t\t\t\t<Input type='text' label='Disabled field' disabled />\n \t\t\t\t<Input type='email' label='Email address' icon='email' value={this.state.email} onChange={this.handleChange.bind(this, 'email')} />\n\t\t\t\t<Input type='tel' label='Phone' name='phone' icon='phone' value={this.state.phone} onChange={this.handleChange.bind(this, 'phone')} />\n\t\t\t\t<Input type='text' value={this.state.hint} label='Required Field' hint='With Hint' required onChange={this.handleChange.bind(this, 'hint')} icon={<span>J</span>} />\n\t\t\t</section>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Input component"
+    "dialog":{
+        "prefix":"mudi",
+        "body":"",
+        "description": "<MaterialUI> Dialog component"
     },
-    "Layout":{
-        "prefix":"rtl",
-        "body":"import { AppBar, Checkbox, IconButton } from 'react-toolbox';\nimport { Layout, NavDrawer, Panel, Sidebar } from 'react-toolbox';\n\nclass LayoutTest extends React.Component {\n\tstate = {\n\t\tdrawerActive: false,\n\t\tdrawerPinned: false,\n\t\tsidebarPinned: false\n\t};\n\n\ttoggleDrawerActive = () => {\n\t\tthis.setState({ drawerActive: !this.state.drawerActive });\n\t};\n\n\ttoggleDrawerPinned = () => {\n\t\tthis.setState({ drawerPinned: !this.state.drawerPinned });\n\t}\n\n\ttoggleSidebar = () => {\n\tthis.setState({ sidebarPinned: !this.state.sidebarPinned });\n\t};\n\n\trender() {\n\t\treturn (\n\t\t\t<Layout>\n\t\t\t\t<NavDrawer active={this.state.drawerActive}\n\t\t\t\t\tpinned={this.state.drawerPinned} permanentAt='xxxl'\n\t\t\t\t\tonOverlayClick={ this.toggleDrawerActive }>\n\t\t\t\t\t<p>\n\t\t\t\t\t\tNavigation, account switcher, etc. go        here.\n\t\t\t\t\t</p>\n\t\t\t\t</NavDrawer>\n\t\t\t\t<Panel>\n\t\t\t\t\t<AppBar><IconButton icon='menu' inverse={ true } onClick={ this.toggleDrawerActive }/></AppBar>\n\t\t\t\t\t<div style={{ flex: 1, overflowY: 'auto', padding: '1.8rem' }}>\n\t\t\t\t\t\t<h1>Main Content</h1>\n\t\t\t\t\t\t<p>Main content goes here.</p>\n\t\t\t\t\t\t<Checkbox label='Pin drawer' checked={this.state.drawerPinned} onChange={this.toggleDrawerPinned} />\n\t\t\t\t\t\t<Checkbox label='Show sidebar' checked={this.state.sidebarPinned} onChange={this.toggleSidebar} />\n\t\t\t\t\t</div>\n\t\t\t\t</Panel>\n\t\t\t\t<Sidebar pinned={ this.state.sidebarPinned } width={ 5 }>\n\t\t\t\t\t<div><IconButton icon='close' onClick={ this.toggleSidebar }/></div>\n\t\t\t\t\t<div style={{ flex: 1 }}>\n\t\t\t\t\t\t<p>Supplemental content goes here.</p>\n\t\t\t\t\t</div>\n\t\t\t\t</Sidebar>\n\t\t\t</Layout>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Layout component"
+    "divider":{
+        "prefix":"mudiv",
+        "body":"",
+        "description": "<MaterialUI> Divider component"
     },
-    "Link":{
-        "prefix":"rtli",
-        "body":"import Link from 'react-toolbox/lib/link';\n\nconst LinksTest = () => (\n\t<nav>\n\t\t<Link active href='/#/components/link' label='Work' count={4} icon='business' />\n\t\t<Link href='/#/components/link' label='Blog' icon='speaker_notes' />\n\t\t<Link href='/#/components/link' label='Explore' icon='explore' />\n\t</nav>\n);\n",
-        "description": "<ReactToolbox> Link component"
+    "drawer":{
+        "prefix":"mudr",
+        "body":"",
+        "description": "<MaterialUI> Drawer component"
     },
-    "List":{
-      "prefix":"rtlin",
-      "body":"import { List, ListItem, ListSubHeader, ListDivider, ListCheckbox } from 'react-toolbox/lib/list';\n\nconst ListTest = () => (\n\t<List selectable ripple>\n\t\t<ListSubHeader caption='Explore characters' />\n\t\t<ListItem\n\t\t\tavatar='https://dl.dropboxusercontent.com/u/2247264/assets/m.jpg'\n\t\t\tcaption='Dr. Manhattan'\n\t\t\tlegend='Jonathan 'Jon' Osterman'\n\t\t\trightIcon='star'\n\t\t/>\n\t\t<ListItem\n\t\t\tavatar='https://dl.dropboxusercontent.com/u/2247264/assets/o.jpg'\n\t\t\tcaption='Ozymandias'\n\t\t\tlegend='Adrian Veidt'\n\t\t\trightIcon='star'\n\t\t/>\n\t\t<ListItem\n\t\t\tavatar='https://dl.dropboxusercontent.com/u/2247264/assets/r.jpg'\n\t\t\tcaption='Rorschach'\n\t\t\tlegend='Walter Joseph Kovacs'\n\t\t\trightIcon='star'\n\t\t/>\n\t\t<ListSubHeader caption='Configuration' />\n\t\t<ListCheckbox checked caption='Notify new comics' legend='You will receive a notification when a new one is published' />\n\t\t<ListDivider />\n\t\t<ListItem caption='Contact the publisher' leftIcon='send' />\n\t\t<ListItem caption='Remove this publication' leftIcon='delete' />\n\t</List>\n);\n",
-    "description":"<ReactToolbox> List component"
+    "gridList":{
+        "prefix":"mugl",
+        "body":"",
+        "description": "<MaterialUI> GridList component"
     },
-    "Menu":{
-        "prefix":"rtm",
-        "body":"import {IconMenu, MenuItem, MenuDivider } from 'react-toolbox/lib/menu';\n\nconst MenuTest = () => (\n\t<IconMenu icon='more_vert' position='top-left' menuRipple>\n\t\t<MenuItem value='download' icon='get_app' caption='Download' />\n\t\t<MenuItem value='help' icon='favorite' caption='Favorite' />\n\t\t<MenuItem value='settings' icon='open_in_browser' caption='Open in app' />\n\t\t<MenuDivider />\n\t\t<MenuItem value='signout' icon='delete' caption='Delete' disabled />\n\t</IconMenu>\n);\n",
-        "description": "<ReactToolbox> Menu component"
+    "fontIcon":{
+        "prefix":"muifi",
+        "body":"",
+        "description": "<MaterialUI> Icons - FontIcon component"
     },
-    "Navigation":{
-        "prefix":"rtn",
-        "body":"import Navigation from 'react-toolbox/lib/navigation';\nimport Link from 'react-toolbox/lib/link';\n\nconst actions = [\n\t{ label: 'Alarm', raised: true, icon: 'access_alarm'},\n\t{ label: 'Location', raised: true, accent: true, icon: 'room'}\n];\n\nconst NavigationTest = () => (\n\t<div>\n\t\t<Navigation type='horizontal' actions={actions} />\n\t\t<Navigation type='vertical'>\n\t\t\t<Link href='http://' label='Inbox' icon='inbox' />\n\t\t\t<Link href='http://' active label='Profile' icon='person' />\n\t\t</Navigation>\n\t</div>\n);\n",
-        "description": "<ReactToolbox> Navigation component"
+    "svgIcon":{
+        "prefix":"muisi",
+        "body":"",
+        "description": "<MaterialUI> Icons - SVGIcon component"
     },
-    "Progress Bar":{
-        "prefix":"rtpb",
-        "body":"import ProgressBar from 'react-toolbox/lib/progress_bar';\n\nconst ProgressTest = () => (\n\t<div>\n\t\t<ProgressBar type='circular' mode='indeterminate' />\n\t\t<ProgressBar type='linear' mode='determinate' value={83} buffer={90}/>\n\t</div>\n);\n",
-        "description": "<ReactToolbox> Progress Bar component"
+    "list":{
+        "prefix":"mul",
+        "body":"",
+        "description": "<MaterialUI> List component"
     },
-    "Radio Buttons":{
-        "prefix":"rtrb",
-        "body":"import { RadioGroup, RadioButton } from 'react-toolbox/lib/radio';\n\nclass RadioTest extends React.Component {\n\tstate = {\n\t\tvalue: 'vvendetta'\n\t};\n\n\thandleChange = (value) => {\n\t\tthis.setState({value});\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<RadioGroup name='comic' value={this.state.value} onChange={this.handleChange}>\n\t\t\t\t<RadioButton label='The Walking Dead' value='thewalkingdead'/>\n\t\t\t\t\t<RadioButton label='From Hell' value='fromhell' disabled/>\n\t\t\t\t\t<RadioButton label='V for a Vendetta' value='vvendetta'/>\n\t\t\t\t\t<RadioButton label='Watchmen' value='watchmen'/>\n\t\t\t\t</RadioGroup>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Radio Button component"
+    "menu":{
+        "prefix":"mumm",
+        "body":"",
+        "description": "<MaterialUI> Menus - Menu component"
     },
-    "Ripple":{
-        "prefix":"rtr",
-        "body":"import Ripple from 'react-toolbox/lib/ripple';\n\nconst Link = (props) => (\n\t<a {...props} style={{position: 'relative'}}>\n\t\t{props.children}\n\t</a>\n);\n\nconst RippleLink = Ripple({spread: 3})(Link);\nconst RippleTest = () => <RippleLink href='#'>Test</RippleLink>;\n",
-        "description": "<ReactToolbox> Ripple component"
+    "iconMenu":{
+        "prefix":"mumim",
+        "body":"",
+        "description": "<MaterialUI> Menus - IconMenu component"
     },
-    "Slider":{
-        "prefix":"rtr",
-        "body":"import Slider from 'react-toolbox/lib/slider';\n\nclass SliderTest extends React.Component {\n\tstate = {\n\t\tslider2: 5,\n\t\tslider3: 1\n\t};\n\n\thandleChange = (slider, value) => {\n\t\tconst newState = {};\n\t\tnewState[slider] = value;\n\t\tthis.setState(newState);\n\t};\n\trender () {\n\t\treturn (\n\t\t\t<section>\n\t\t\t\t<p>Normal slider</p>\n\t\t\t\t<Slider value={this.state.slider1} onChange{this.handleChange.bind(this, 'slider1')} />\n\t\t\t\t<p>With steps, initial value and editable</p>\n\t\t\t\t<Slider min={0} max={10} editable value={this.state.slider2} onChange={this.handleChange.bind(this, 'slider2')} />\n\t\t\t\t<p>Pinned and with snaps</p>\n\t\t\t\t<Slider pinned snaps min={0} max={10} step={1} editable value={this.state.slider3} onChange={this.handleChange.bind(this, 'slider3')} />\n\t\t\t</section>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Slider component"
+    "dropdownMenu":{
+        "prefix":"mumdm",
+        "body":"",
+        "description": "<MaterialUI> Menus - DropDownMenu component"
     },
-    "Snack Bar":{
-        "prefix":"rts",
-        "body":"import { Button, Snackbar } from 'react-toolbox';\n\nclass SnackbarTest extends React.Component {\n\thandleClick = () => {\n\t\tthis.refs.snackbar.show();\n\t};\n\n\thandleSnackbarClick = () => {\n\t\tthis.refs.snackbar.hide();\n\t};\n\trender () {\n\t\treturn (\n\t\t\t<section>\n\t\t\t\t<Button label='Show Snackbar' raised onClick={this.handleClick} />\n\t\t\t\t<Snackbar\n\t\t\t\t\taction='Nice'\n\t\t\t\t\ticon='question_answer'\n\t\t\t\t\tlabel='A new developer started using React Toolbox'\n\t\t\t\t\tonClick={this.handleSnackbarClick}\n\t\t\t\t\tref='snackbar'\n\t\t\t\t\ttype='accept'\n\t\t\t\t/>\n\t\t\t</section>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Snack Bar component"
+    "paper":{
+        "prefix":"mup",
+        "body":"",
+        "description": "<MaterialUI> Paper component"
     },
-    "Switch":{
-        "prefix":"rtsb",
-        "body":"import Switch from 'react-toolbox/lib/switch';\n\nclass SwitchTest extends React.Component {\n\tstate = {\n\t\tswitch_1: true,\n\t\tswitch_2: false,\n\t\tswitch_3: true\n\t};\n\n\thandleChange = (field, value) => {\n\t\tthis.setState({...this.state, [field]: value});\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<section>\n\t\t\t\t<Switch\n\t\t\t\t\tchecked={this.state.switch_1}\n\t\t\t\t\tlabel='Push notifications'\n\t\t\t\t\tonChange={this.handleChange.bind(this, 'switch_1')}\n\t\t\t\t/>\n\t\t\t\t<Switch\n\t\t\t\t\tchecked={this.state.switch_2}\n\t\t\t\t\tlabel='Mail notifications'\n\t\t\t\t\tonChange={this.handleChange.bind(this, 'switch_2')}\n\t\t\t\t/>\n\t\t\t\t<Switch\n\t\t\t\t\tchecked={this.state.switch_3}\n\t\t\t\t\tdisabled\n\t\t\t\t\tlabel='Nothing, thanks'\n\t\t\t\t\tonChange={this.handleChange.bind(this,'switch_3')}\n\t\t\t\t />\n\t\t\t</section>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Switch component"
+    "popover":{
+        "prefix":"mupo",
+        "body":"",
+        "description": "<MaterialUI> Popover component"
     },
-    "Table":{
-        "prefix":"rtsw",
-        "body":"import Table from 'react-toolbox/lib/table';\n\nconst UserModel = {\n\tname: {type: String},\n\ttwitter: {type: String},\n\tbirthdate: {type: Date},\n\tcats: {type: Number},\n\tdogs: {type: Number},\n\tactive: {type: Boolean}\n};\n\nconst users = [\n\t{name: 'Javi Jimenez', twitter: '@soyjavi', birthdate: new Date(1980, 3, 11), cats: 1},\n\t{name: 'Javi Velasco', twitter: '@javivelasco', birthdate: new Date(1987, 1, 1), dogs: 1, active: true}\n];\n\nclass TableTest extends React.Component {\n\tstate = { selected: [], source: users };\n\n\thandleChange = (row, key, value) => {\n\t\tconst source = this.state.source;\n\t\tsource[row][key] = value;\n\t\tthis.setState({source});\n\t};\n\n\thandleSelect = (selected) => {\n\t\tthis.setState({selected});\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<Table\n\t\t\t\tmodel={UserModel}\n\t\t\t\tonChange={this.handleChange}\n\t\t\t\tonSelect={this.handleSelect}\n\t\t\t\tselectable\n\t\t\t\tselected={this.state.selected}\n\t\t\t\tsource={this.state.source}\n\t\t\t/>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Table component"
+    "circularProgress":{
+        "prefix":"mupcp",
+        "body":"",
+        "description": "<MaterialUI> Progress - CircularProgress component"
     },
-    "Tabs":{
-        "prefix":"rttable",
-        "body":"import {Tab, Tabs} from 'react-toolbox';\n\nclass TabsTest extends React.Component {\n\tstate = {\n\t\tindex: 1\n\t};\n\n\thandleTabChange = (index) => {\n\t\tthis.setState({index});\n\t};\n\n\thandleActive = () => {\n\t\tconsole.log('Special one activated');\n\t};\n\n\trender () {\n\t\treturn (\n\t\t\t<Tabs index={this.state.index} onChange={this.handleTabChange}>\n\t\t\t\t<Tab label='Primary'><small>Primary content</small></Tab>\n\t\t\t\t<Tab label='Secondary' onActive={this.handleActive}><small>Secondary content</small></Tab>\n\t\t\t\t<Tab label='Third' disabled><small>Disabled content</small></Tab>\n\t\t\t\t<Tab label='Fourth' hidden><small>Fourth content hidden</small></Tab>\n\t\t\t\t<Tab label='Fifth'><small>Fifth content</small></Tab>\n\t\t\t</Tabs>\n\t\t);\n\t}\n}\n",
-        "description": "<ReactToolbox> Tabs component"
+    "linearProgress":{
+        "prefix":"muplp",
+        "body":"",
+        "description": "<MaterialUI> Progress - LinearProgress component"
     },
-    "Tool Tips":{
-        "prefix":"rttabs",
-        "body":"import Button from 'react-toolbox/lib/button';\nimport Tooltip from 'react-toolbox/lib/tooltip';\nimport Link from 'react-toolbox/lib/link';\n\nconst TooltipButton = Tooltip(Button);\nconst TooltipInput = Tooltip(Input);\nconst TooltipLink = Tooltip(Link);\n\nconst TooltipTest = () => (\n\t<div>\n\t\t<TooltipButton label='Bookmark' icon='bookmark' raised primary tooltip='Bookmark Tooltip' tooltipDelay={1000} />\n\t\t<TooltipButton icon='add' floating accent tooltip='Floating Tooltip' />\n\t\t<TooltipLink count={42} href='#' label='The answer is' icon='speaker_notes' tooltip='Question - universe?'/>\n\t\t<TooltipInput tooltip='lorem ipsum...' />\n\t</div>\n);\n",
-        "description": "<ReactToolbox> Tool Tips component"
+    "refreshIndicator":{
+        "prefix":"mupri",
+        "body":"",
+        "description": "<MaterialUI> Progress - RefreshIndicator component"
     },
-    "Time Picker":{
-        "prefix":"rttt",
-        "body":"import TimePicker from 'react-toolbox/lib/time_picker';\nlet time = new Date();\ntime.setHours(17);\ntime.setMinutes(28);\n\nclass TimePickerTest extends React.Component {\n\tstate = {time};\n\n\thandleChange = (time) => {\n\t\tthis.setState({time});\n\t};\n\n\trender () {\n\t\treturn <TimePicker label='Finishing time' onChange={this.handleChange} value={this.state.time} />;\n\t}\n}\n",
-        "description": "<ReactToolbox> Time Picker component"
+    "selectField":{
+        "prefix":"musf",
+        "body":"",
+        "description": "<MaterialUI> SelectField component"
+    },
+    "slider":{
+        "prefix":"mus",
+        "body":"",
+        "description": "<MaterialUI> Slider component"
+    },
+    "checkbox":{
+        "prefix":"musc",
+        "body":"",
+        "description": "<MaterialUI> Switches - Checkbox component"
+    },
+    "radioButton":{
+        "prefix":"musrb",
+        "body":"",
+        "description": "<MaterialUI> Switches - RadioButton component"
+    },
+    "toggle":{
+        "prefix":"must",
+        "body":"",
+        "description": "<MaterialUI> Switches - Toggle component"
+    },
+    "snackbar":{
+        "prefix":"musu",
+        "body":"",
+        "description": "<MaterialUI> Snackbar component"
+    },
+    "stepper":{
+        "prefix":"mutable",
+        "body":"",
+        "description": "<MaterialUI> Stepper component"
+    },
+    "subheader":{
+        "prefix":"mutabs",
+        "body":"",
+        "description": "<MaterialUI> Subheader component"
+    },
+    "table":{
+        "prefix":"mutf",
+        "body":"",
+        "description": "<MaterialUI> Table component"
+    },
+    "tabs":{
+        "prefix":"mutp",
+        "body":"",
+        "description": "<MaterialUI> Tabs component"
+    },
+    "textField":{
+        "prefix":"mutf",
+        "body":"",
+        "description": "<MaterialUI> TextField component"
+    },
+    "timePicker":{
+        "prefix":"mutp",
+        "body":"",
+        "description": "<MaterialUI> TimePicker component"
+    },
+    "toolbar":{
+        "prefix":"muto",
+        "body":"",
+        "description": "<MaterialUI> Toolbar component"
     }
 }
