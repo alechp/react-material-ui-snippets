@@ -6,3 +6,7 @@ Tasks:
     ☐ Add reference to [Themes, Styles, Colors]
     ☐ Add sample source to snippets.json
     ☐ Publish to VSCode Marketplace
+  Cleanup:
+    ☐ Proper indenting for components
+    ☐ Remove test.js file used for testing shortcuts
+    ☐ Create shell script for building and installing extension
